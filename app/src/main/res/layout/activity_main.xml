@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/mainDrawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollViewMain"
+            android:layout_width="fill_parent"
+            android:background="#1D1D1D"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/uit1">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:text="Established in 2000, University Institute of Technology (University of Burdwan) offers undergraduate engineering courses (B.E.) in six different specializations. It also offers two postgraduate engineering courses (M.E) with the specialisation in Computer Science Engineering and Electronics &amp; Instrumentation Engineering. The institute admits 60 students per course annually through WBJEE in its undergraduate course and 18 students per course annually through GATE score in its postgraduate course. Candidates can apply online on the official website of the college for admission.">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fee">
+
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#3B7197"
+                    android:text="UIT Burdwan Admissions">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:text="Candidates applying for B.E. should have appeared in 10+2 examinations with Mathematics, Physics and Chemistry as the main subject from a recognized board and should have scored minimum aggregate of 45% for general category candidates\n\n
+    For S.C./S.T. category, candidate should have scored at least 40% marks in higher secondary examination.\n\n
+    Admission to B.E. is done based on the score of WBJEE.\n\n
+    Candidates applying for M.E. should have passed their B.E/B.Tech or M.Sc. degree Examination in the respective field having at least 60% marks in aggregate\n\n
+    Admission to M.E. is done based on a valid score in GATE.\n\n
+    For Non GATE candidates, admissions are considered if seats are vacant after admissions by GATE examination.">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#3B7197"
+                    android:text="How to Apply?">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:text="The applications are accepted online through the official website of the university.\n\n
+    Candidates have to fill their information including their WBJEE score for B.E. \n\n
+    Further the admissions are done through the counselling process after document verification and fee submission.\n\n
+    For M.E., students have to fill the form providing their GATE rank. Further selection is done by taking an interview of the candidate.\n\n
+    For Non GATE candidates, if seats remain vacant after GATE admissions, consideration is done." >
+
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/faculities">
+
+
+                </ImageView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout">
+
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start">
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
